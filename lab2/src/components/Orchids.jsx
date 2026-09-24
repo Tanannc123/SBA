@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import useOrchids from '../hooks/useOrchids';
 import ErrorMessage from './ErrorMessage';
 import LoadingSpinner from './LoadingSpinner';
@@ -27,6 +27,13 @@ export default function Orchids() {
                 <h2 className="mb-0">Orchids List</h2>
                 <Button variant="outline-primary" onClick={reload} disabled={loading}>Reload</Button>
             </div>
+            <Form.Control
+                type="text"
+                placeholder="Search by name..."
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+                className="mb-3"
+            />
             {loading && <LoadingSpinner />}
             {error && <ErrorMessage message={error} onRetry={reload} />}
             {!loading && !error && orchids.length === 0 && <p>Không có Orchid nào.</p>}
