@@ -1,0 +1,7 @@
+package fu.se.slot18orchidjparestlab4.orchid.repositories;
+import fu.se.slot18orchidjparestlab4.orchid.pojos.Orchid;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+public interface IOrchidRepository extends JpaRepository<Orchid, Long> {
+    List<Orchid> findByOrchidNameContainingIgnoreCase(String name);
+}
