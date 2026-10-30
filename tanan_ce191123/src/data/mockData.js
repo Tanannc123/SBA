@@ -1,3 +1,4 @@
+//Author: Pham Huynh Tan An_CE191123
 export const initialCategories = [
     { id: 1, name: "Technology", image: "images/p1.jpg", quantity: 15, status: 1 },
     { id: 2, name: "Business", image: "images/p2.jpg", quantity: 23, status: 1 },
