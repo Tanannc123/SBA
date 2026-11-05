@@ -1,4 +1,4 @@
-# A2HuynhTuanKiet_SE1910 — FUNewsManagementSystem
+
 
 Bài Assignment 02 gồm **backend Spring Boot 3 REST API** (Controller → Service → Repository, Spring Data JPA, SQL Server) và **frontend React/Vite** gọi API bằng axios. Hai phần nằm cạnh nhau:
 
